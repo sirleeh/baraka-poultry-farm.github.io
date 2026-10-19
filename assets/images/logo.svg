@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <!-- Background Circle Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff5f5" />
+      <stop offset="100%" stop-color="#fee2e2" />
+    </linearGradient>
+
+    <!-- Ring Accent Gradient -->
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f52029" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+
+    <!-- Comb & Wattle Red Gradient -->
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff3b30" />
+      <stop offset="100%" stop-color="#c81e1e" />
+    </linearGradient>
+
+    <!-- Golden Egg & Beak Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <!-- Leaf Green Gradient -->
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Outer Ring Badge -->
+  <circle cx="50" cy="50" r="47" fill="none" stroke="url(#ringGrad)" stroke-width="3" />
+  <circle cx="50" cy="50" r="43.5" fill="url(#bgGrad)" filter="url(#subtleShadow)" />
+
+  <!-- Rising Sun Accent Arc -->
+  <path d="M 22 56 A 29 29 0 0 1 78 56" fill="none" stroke="#fde68a" stroke-width="5" stroke-linecap="round" opacity="0.75" />
+
+  <!-- Organic Agricultural Leaf (Bottom Left to Right) -->
+  <path d="M 24 72 C 32 64 45 66 52 72 C 45 78 32 78 24 72 Z" fill="url(#greenGrad)" />
+  <path d="M 26 72 C 36 69 46 71 50 72" stroke="#a7f3d0" stroke-width="1.2" stroke-linecap="round" fill="none" />
+
+  <!-- The Egg Silhouette (Negative/Positive Space in Rooster Body) -->
+  <ellipse cx="61" cy="55" rx="14" ry="18" fill="url(#goldGrad)" transform="rotate(12 61 55)" opacity="0.95" />
+
+  <!-- Stylized Proud Rooster Head & Chest Silhouette -->
+  <!-- Main Body / Neck Curve -->
+  <path d="M 40 73 C 34 65 33 53 38 43 C 41 38 45 34 49 31 C 52 28 55 25 54 22 C 51 22 47 24 44 26 C 41 28 38 31 36 35 C 33 40 31 47 31 55 C 31 63 35 69 40 73 Z" fill="url(#redGrad)" />
+
+  <!-- Rooster Crown / Comb (3 Vibrant Petals) -->
+  <path d="M 49 22 C 47 16 52 13 55 14 C 57 15 57 18 56 21 Z" fill="url(#redGrad)" />
+  <path d="M 54 20 C 53 14 59 11 62 13 C 65 15 64 19 62 22 Z" fill="url(#redGrad)" />
+  <path d="M 60 21 C 61 16 67 15 68 18 C 69 21 67 24 64 25 Z" fill="url(#redGrad)" />
+
+  <!-- Rooster Beak -->
+  <polygon points="62,26 72,30 62,34" fill="url(#goldGrad)" stroke="#b45309" stroke-width="0.5" />
+
+  <!-- Wattle (Red throat drop) -->
+  <path d="M 56 34 C 58 37 57 41 54 41 C 51 41 51 36 53 34 Z" fill="url(#redGrad)" />
+
+  <!-- Eye -->
+  <circle cx="56" cy="27" r="2.2" fill="#1f2937" />
+  <circle cx="55.3" cy="26.3" r="0.8" fill="#ffffff" />
+
+  <!-- Feather Accent Stripes on Chest -->
+  <path d="M 44 48 Q 48 52 53 52" stroke="#ffffff" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.85" />
+  <path d="M 40 56 Q 46 60 52 59" stroke="#ffffff" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.85" />
+  <path d="M 37 64 Q 44 67 49 65" stroke="#ffffff" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.85" />
+</svg>
+
